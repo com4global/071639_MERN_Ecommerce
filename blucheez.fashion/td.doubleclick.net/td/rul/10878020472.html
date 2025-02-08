@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <meta http-equiv="origin-trial" content="Avh5Ny0XEFCyQ7+oNieXskUrqY8edUzL5/XrwKlGjARQHW4TFRK+jVd5HnDIpY20n5OLHfgU4ku7x48N3uhG/A0AAABxeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
+</head>
+
+<body>
+    <script>
+        var ig_list = {
+            "interestGroups": [{
+                "action": 1,
+                "interestGroupAttributes": {
+                    "owner": "https://td.doubleclick.net",
+                    "name": "1j7695559657"
+                }
+            }]
+        };
+    </script>
+    <script>
+        for (let i of ig_list.interestGroups) {
+            try {
+                if (i.action == 0) {
+                    navigator.joinAdInterestGroup(i.interestGroupAttributes, i.expirationTimeInSeconds);
+                } else if (i.action == 1) {
+                    navigator.leaveAdInterestGroup(i.interestGroupAttributes);
+                }
+            } catch (e) {
+                navigator.sendBeacon(`https://pagead2.googlesyndication.com/pagead/gen_204/?id=turtlex_join_ig&tx_jig=${encodeURIComponent(JSON.stringify(i))}&tx_jem=${e.message}&tx_jen=${e.name}`);
+            }
+        }
+    </script>
+</body>
+
+</html>

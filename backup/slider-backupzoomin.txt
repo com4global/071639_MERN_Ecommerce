@@ -1,0 +1,877 @@
+import React, { useContext, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules"; // Correct import path
+import "swiper/swiper-bundle.css";
+import "./ProductDisplay.css";
+import star_icon from "../Assets/star_icon.png";
+import star_dull_icon from "../Assets/star_dull_icon.png";
+import { ShopContext } from "../../Context/ShopContext";
+
+const ProductDisplay = (props) => {
+ const { product } = props;
+ const { addToCart } = useContext(ShopContext);
+
+ const [selectedSize, setSelectedSize] = useState("");
+ const [isHovered, setIsHovered] = useState(false);
+
+ const handleSizeClick = (size) => setSelectedSize(size);
+
+ const handleAddToCart = () => {
+  if (!selectedSize) {
+   alert("Please select a size before adding to the cart.");
+   return;
+  }
+  addToCart(product.id, selectedSize);
+  alert(`Added to cart: ${product.name} (Size: ${selectedSize})`);
+ };
+
+ return (
+  <div className="productdisplay">
+   <div
+    className="productdisplay-left"
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
+   >
+    {isHovered ? (
+     <Swiper
+      spaceBetween={10}
+      slidesPerView={1}
+      navigation
+      modules={[Navigation]} // Pass modules here
+     >
+      {product.images && product.images.length > 0 ? (
+       product.images.map((img, index) => (
+        <SwiperSlide key={index}>
+         <img src={img} alt={`Slide ${index}`} className="slider-img" />
+        </SwiperSlide>
+       ))
+      ) : (
+       <SwiperSlide>
+        <img src={product.image} alt="Default" className="slider-img" />
+       </SwiperSlide>
+      )}
+     </Swiper>
+    ) : (
+     <div className="productdisplay-img">
+      <img
+       className="productdisplay-main-img"
+       src={product.image}
+       alt={product.name}
+      />
+     </div>
+    )}
+   </div>
+   <div className="productdisplay-right">
+    <h1>{product.name}</h1>
+    <div className="productdisplay-right-stars">
+     <img src={star_icon} alt="" />
+     <img src={star_icon} alt="" />
+     <img src={star_icon} alt="" />
+     <img src={star_icon} alt="" />
+     <img src={star_dull_icon} alt="" />
+     <p>(122)</p>
+    </div>
+    <div className="productdisplay-right-prices">
+     <div className="productdisplay-right-price-old">${product.oldPrice}</div>
+     <div className="productdisplay-right-price-new">${product.newPrice}</div>
+    </div>
+    <div className="productdisplay-right-description">
+     A lightweight, usually knitted, pullover shirt, close-fitting and with a
+     round neckline and short sleeves, worn as an undershirt or outer garment.
+    </div>
+    <div className="productdisplay-right-size">
+     <h1>Select Size</h1>
+     <div className="productdisplay-right-sizes">
+      {["S", "M", "L", "XL", "XXL"].map((size) => (
+       <div
+        key={size}
+        className={`size-option ${selectedSize === size ? "selected" : ""}`}
+        onClick={() => handleSizeClick(size)}
+       >
+        {size}
+       </div>
+      ))}
+     </div>
+    </div>
+    <button onClick={handleAddToCart}>ADD TO CART</button>
+    <p className="productdisplay-right-category">
+     <span>Category :</span> Women, T-Shirt, Crop Top
+    </p>
+    <p className="productdisplay-right-category">
+     <span>Tags :</span> Modern, Latest
+    </p>
+   </div>
+  </div>
+ );
+};
+
+export default ProductDisplay;
+//=========================================
+roughly sliding working fine
+import React, { useContext, useState } from "react";
+import "./ProductDisplay.css";
+import star_icon from "../Assets/star_icon.png";
+import star_dull_icon from "../Assets/star_dull_icon.png";
+import { ShopContext } from "../../Context/ShopContext";
+
+const ProductDisplay = (props) => {
+ const { product } = props;
+ const { addToCart } = useContext(ShopContext);
+
+ const [selectedSize, setSelectedSize] = useState(""); // State to track selected size
+
+ const handleSizeClick = (size) => {
+  setSelectedSize(size); // Set the selected size
+ };
+
+ const handleAddToCart = () => {
+  if (!selectedSize) {
+   alert("Please select a size before adding to the cart.");
+   return;
+  }
+  addToCart(product.id, selectedSize); // Pass product ID and size to addToCart
+  alert(`Added to cart: ${product.name} (Size: ${selectedSize})`);
+ };
+
+ return (
+  <div className="productdisplay">
+   <div className="productdisplay-left">
+    <div className="productdisplay-img-list">
+     <img src={product.image} alt="product thumbnail" />
+     <img src={product.image} alt="product thumbnail" />
+     <img src={product.image} alt="product thumbnail" />
+     <img src={product.image} alt="product thumbnail" />
+    </div>
+    <div className="productdisplay-img">
+     <img
+      className="productdisplay-main-img"
+      src={product.image}
+      alt="main product"
+     />
+    </div>
+   </div>
+   <div className="productdisplay-right">
+    <h1>{product.name}</h1>
+    <div className="productdisplay-right-stars">
+     <img src={star_icon} alt="star" />
+     <img src={star_icon} alt="star" />
+     <img src={star_icon} alt="star" />
+     <img src={star_icon} alt="star" />
+     <img src={star_dull_icon} alt="star" />
+     <p>(122)</p>
+    </div>
+    <div className="productdisplay-right-prices">
+     <div className="productdisplay-right-price-old">${product.oldPrice}</div>
+     <div className="productdisplay-right-price-new">${product.newPrice}</div>
+    </div>
+    <div className="productdisplay-right-description">
+     A lightweight, usually knitted, pullover shirt, close-fitting and with a
+     round neckline and short sleeves, worn as an undershirt or outer garment.
+    </div>
+    <div className="productdisplay-right-size">
+     <h1>Select Size</h1>
+     <div className="productdisplay-right-sizes">
+      {["S", "M", "L", "XL", "XXL"].map((size) => (
+       <div
+        key={size}
+        className={`size-option ${selectedSize === size ? "selected" : ""}`}
+        onClick={() => handleSizeClick(size)}
+       >
+        {size}
+       </div>
+      ))}
+     </div>
+    </div>
+    <button onClick={handleAddToCart}>ADD TO CART</button>
+    <p className="productdisplay-right-category">
+     <span>Category :</span> Women, T-Shirt, Crop Top
+    </p>
+    <p className="productdisplay-right-category">
+     <span>Tags :</span> Modern, Latest
+    </p>
+   </div>
+  </div>
+ );
+};
+
+export default ProductDisplay;
+
+============================
+.productdisplay {
+ display: flex;
+ margin: 0 auto;
+ max-width: var(--wrapper-mw);
+ letter-spacing: 0;
+ user-select: none;
+ pointer-events: auto;
+}
+
+.productdisplay-left {
+ display: flex;
+ gap: 17px;
+ position: relative; /* Needed to ensure the zoom works on the main image */
+}
+
+.productdisplay-img-list {
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+}
+
+.productdisplay-img-list img {
+ height: 163px;
+ border: 1px solid var(--border-color);
+ cursor: pointer;
+}
+
+.productdisplay-main-img {
+ width: 100%;
+ height: auto;
+ object-fit: cover;
+ transition: transform 0.3s ease;
+ cursor: zoom-in; /* Set cursor to indicate zoom on hover */
+}
+
+.productdisplay-left:hover .productdisplay-main-img {
+ transform: scale(1.5); /* Zoom effect on hover */
+}
+
+/* Slider Container */
+.productdisplay-slider {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+}
+
+/* Main Image Styling */
+.slider-main {
+ width: 80%;
+ aspect-ratio: 4 / 3;
+ overflow: hidden;
+ position: relative;
+}
+
+.slider-main img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ transition: transform 0.3s ease;
+}
+
+.slider-main:hover img {
+ transform: scale(1.1); /* Zoom on hover */
+}
+
+/* Thumbnails Styling */
+.slider-thumbnails {
+ display: flex;
+ justify-content: center;
+ gap: 10px;
+ margin-top: 10px;
+}
+
+.thumbnail {
+ width: 80px;
+ height: 80px;
+ object-fit: cover;
+ cursor: pointer;
+ border: 2px solid transparent;
+ transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.thumbnail.active,
+.thumbnail:hover {
+ border: 2px solid #ff0000; /* Highlight active or hovered thumbnail */
+ transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+//shopcategory.css file content
+.shopcategory-banner {
+ display: block;
+ margin: 30px auto;
+ width: 82%;
+}
+.shopcategory-indexSort {
+ display: flex;
+ margin: 0px 170px;
+ justify-content: space-between;
+ align-items: center;
+}
+.shopcategory-sort {
+ padding: 10px 20px;
+ border-radius: 40px;
+ border: 1px solid #888;
+}
+.shopcategory-indexSort p span {
+ font-weight: 600;
+}
+.shopcategory-products {
+ margin: 20px 170px;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ row-gap: 80px;
+}
+.shopcategory-loadmore {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 150px auto;
+ width: 233px;
+ height: 69px;
+ border-radius: 75px;
+ background: #ededed;
+ color: #787878;
+ font-size: 18px;
+ font-weight: 500;
+}
+
+.popular {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+ height: 90vh;
+}
+.popular h1 {
+ color: #171717;
+ font-size: 50px;
+ font-weight: 600;
+}
+.popular hr {
+ width: 200px;
+ height: 6px;
+ border-radius: 10px;
+ background: #252525;
+}
+.popular-item {
+ margin-top: 50px;
+ display: flex;
+ gap: 30px;
+}
+
+.item {
+ width: 350px;
+}
+.item p {
+ margin: 6px 0px;
+}
+.item-prices {
+ display: flex;
+ gap: 20px;
+}
+.item-price-new {
+ color: #374151;
+ font-size: 18x;
+ font-weight: 600;
+}
+.item-price-old {
+ color: #8c8c8c;
+ font-size: 18px;
+ font-weight: 500;
+ text-decoration: line-through;
+}
+.item:hover {
+ transform: scale(1.05);
+ transition: 0.6s;
+}
+
+.item img {
+ max-width: 100%;
+ border-radius: 8px;
+ cursor: pointer;
+}
+.item-prices {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 8px;
+}
+
+.item img {
+ max-width: 100%;
+ border-radius: 8px;
+ cursor: pointer;
+ transition: transform 0.5s ease, filter 0.3s ease; /* Add smooth transition */
+}
+
+.item img:hover {
+ transform: scale(1.2); /* This will zoom in on hover */
+ filter: brightness(
+  0.9
+ ); /* Slightly darken the image to make the zoom more visible */
+}
+
+.item {
+ position: relative;
+ overflow: hidden; /* Prevent the image from overflowing outside the container */
+}
+.item img:hover {
+ transform: scale(1.2);
+ transform-origin: center center; /* Center the zoom */
+}
+
+
+//================================
+shopcategory.jsx file content
+const ShopCategory = (props) => {
+ const [products, setProducts] = useState([]);
+ const [displayedProducts, setDisplayedProducts] = useState([]);
+ const [currentPage, setCurrentPage] = useState(1);
+ const [loading, setLoading] = useState(true);
+ const [error, setError] = useState(null);
+ const [selectedProduct, setSelectedProduct] = useState(null);
+ const itemsPerPage = 10;
+
+ useEffect(() => {
+  const fetchProductsByCategory = async () => {
+   try {
+    setLoading(true);
+    const response = await axios.get(
+     // `https://ld3ujozidmopbmvu4dkft6hm3i0gpdrb.lambda-url.us-east-1.on.aws/api/Product/category/${props.category}`,
+     `https://localhost:7142/api/Product/category/${props.category}`,
+    );
+    setProducts(response.data);
+    setDisplayedProducts(response.data.slice(0, itemsPerPage));
+   } catch (error) {
+    setError("Failed to load products. Please try again later.");
+   } finally {
+    setLoading(false);
+   }
+  };
+
+  fetchProductsByCategory();
+ }, [props.category]);
+
+ const handleSortByPrice = () => {
+  const sortedProducts = [...products].sort((a, b) => b.newPrice - a.newPrice);
+  setProducts(sortedProducts);
+  setDisplayedProducts(sortedProducts.slice(0, currentPage * itemsPerPage));
+ };
+
+ const handleLoadMore = () => {
+  const startIndex = currentPage * itemsPerPage;
+  const nextProducts = products.slice(startIndex, startIndex + itemsPerPage);
+  setDisplayedProducts((prev) => [...prev, ...nextProducts]);
+  setCurrentPage((prev) => prev + 1);
+ };
+
+ const handleProductClick = (product) => {
+  setSelectedProduct(product); // Set the clicked product as the selected one
+ };
+
+ return (
+  <div className="shop-category">
+   {/* Banner Section */}
+   <img
+    className="shopcategory-banner"
+    src={props.banner}
+    alt="Category Banner"
+   />
+
+   {/* Sorting and Info Section */}
+   <div className="shopcategory-indexSort">
+    <Typography variant="body1">
+     Showing {displayedProducts.length} of {products.length} products
+    </Typography>
+    <div className="shopcategory-sort" onClick={handleSortByPrice}>
+     Sort by Price (High to Low)
+    </div>
+   </div>
+
+   {/* Products Grid */}
+   <div className="shopcategory-products">
+    {loading ? (
+     <div className="loading-indicator">
+      <CircularProgress />
+     </div>
+    ) : error ? (
+     <Typography color="error">{error}</Typography>
+    ) : (
+     displayedProducts.map((product) => (
+      <div key={product.id} className="item">
+       <Link to={`/product/${product.id}`}>
+        <img
+         src={product.image}
+         alt={product.name}
+         onClick={() => window.scrollTo(0, 0)}
+        />
+       </Link>
+       <p>{product.name}</p>
+       <div className="item-prices">
+        <div className="item-price-new">${product.newPrice}</div>
+        <div className="item-price-old">${product.oldPrice}</div>
+       </div>
+       <p
+        style={{
+         color: product.available ? "green" : "red",
+         fontWeight: "bold",
+        }}
+       >
+        {product.available ? "In stock" : "Out of stock"}
+       </p>
+      </div>
+     ))
+    )}
+    {selectedProduct && <ProductDisplay product={selectedProduct} />}
+   </div>
+
+   {/* Load More Button */}
+   {displayedProducts.length < products.length && (
+    <Button
+     variant="contained"
+     color="primary"
+     onClick={handleLoadMore}
+     className="load-more-button"
+    >
+     Load More
+    </Button>
+   )}
+  </div>
+ );
+};
+
+export default ShopCategory;
+
+//latest shop category backup 
+
+const ShopCategory = (props) => {
+ const [products, setProducts] = useState([]);
+ const [displayedProducts, setDisplayedProducts] = useState([]);
+ const [currentPage, setCurrentPage] = useState(1);
+ const [loading, setLoading] = useState(true);
+ const [error, setError] = useState(null);
+ const [selectedProduct, setSelectedProduct] = useState(null);
+ const itemsPerPage = 10;
+
+ useEffect(() => {
+  const fetchProductsByCategory = async () => {
+   try {
+    setLoading(true);
+    const response = await axios.get(
+     `https://localhost:7142/api/Product/category/${props.category}`,
+    );
+    setProducts(response.data);
+    setDisplayedProducts(response.data.slice(0, itemsPerPage));
+   } catch (error) {
+    setError("Failed to load products. Please try again later.");
+   } finally {
+    setLoading(false);
+   }
+  };
+
+  fetchProductsByCategory();
+ }, [props.category]);
+
+ const handleSortByPrice = () => {
+  const sortedProducts = [...products].sort((a, b) => b.newPrice - a.newPrice);
+  setProducts(sortedProducts);
+  setDisplayedProducts(sortedProducts.slice(0, currentPage * itemsPerPage));
+ };
+
+ const handleLoadMore = () => {
+  const startIndex = currentPage * itemsPerPage;
+  const nextProducts = products.slice(startIndex, startIndex + itemsPerPage);
+  setDisplayedProducts((prev) => [...prev, ...nextProducts]);
+  setCurrentPage((prev) => prev + 1);
+ };
+
+ const handleProductClick = (product) => {
+  setSelectedProduct(product); // Set the clicked product as the selected one
+ };
+
+ return (
+  <div className="shop-category">
+   <img
+    className="shopcategory-banner"
+    src={props.banner}
+    alt="Category Banner"
+   />
+
+   <div className="shopcategory-indexSort">
+    <Typography variant="body1">
+     Showing {displayedProducts.length} of {products.length} products
+    </Typography>
+    <div className="shopcategory-sort" onClick={handleSortByPrice}>
+     Sort by Price (High to Low)
+    </div>
+   </div>
+
+   <div className="shopcategory-products">
+    {loading ? (
+     <div className="loading-indicator">
+      <CircularProgress />
+     </div>
+    ) : error ? (
+     <Typography color="error">{error}</Typography>
+    ) : (
+     displayedProducts.map((product) => (
+      <div key={product.id} className="item">
+       <Link
+        to={`/product/${product.id}`}
+        onClick={() => handleProductClick(product)}
+       >
+        <img
+         src={product.image}
+         alt={product.name}
+         onClick={() => window.scrollTo(0, 0)}
+        />
+       </Link>
+       <p>{product.name}</p>
+       <div className="item-prices">
+        <div className="item-price-new">${product.newPrice}</div>
+        <div className="item-price-old">${product.oldPrice}</div>
+       </div>
+       <p
+        style={{
+         color: product.available ? "green" : "red",
+         fontWeight: "bold",
+        }}
+       >
+        {product.available ? "In stock" : "Out of stock"}
+       </p>
+      </div>
+     ))
+    )}
+    {selectedProduct && <ProductDisplay product={selectedProduct} />}
+   </div>
+
+   {displayedProducts.length < products.length && (
+    <Button
+     variant="contained"
+     color="primary"
+     onClick={handleLoadMore}
+     className="load-more-button"
+    >
+     Load More
+    </Button>
+   )}
+  </div>
+ );
+
+//====================
+
+The data-master attribute in the HTML tag is not a standard attribute defined by HTML or web browsers. Instead, it's likely a custom attribute used by a specific library, framework, or application for its own purposes. Here's what it likely does:
+
+Purpose of data-master
+The attribute data-master in this case contains a URL:
+
+html
+Copy
+Edit
+data-master="//blucheez.fashion/cdn/shop/files/BMDJ-010.webp?v=1733141185"
+It seems to point to the master image URL of the product. This URL may represent:
+
+Primary or Default Image: The main or high-resolution image that serves as the source for other dynamically rendered versions (e.g., smaller sizes or different formats).
+Image Resource Reference: It may serve as a reference for loading variations of the image (e.g., thumbnails, hover images, zoomed images) or fallback content.
+Custom Library Feature: If a lazy-loading or image-processing library is in use, this attribute could indicate the primary resource for loading the image.
+How It Might Be Used
+Depending on the implementation:
+
+Lazy Loading or Optimization:
+
+The library might use the data-master URL as the definitive source to fetch and manipulate the image (e.g., creating thumbnails, applying transformations like resizing, or generating web-friendly formats).
+Image Management:
+
+A JavaScript function or framework may use data-master to:
+Fetch the image from the server when needed.
+Serve as a backup URL in case other image resources fail.
+Pass the master image URL to another system, like a lightbox or zoom viewer.
+Styling or Display Decisions:
+
+It may act as metadata for visual elements or triggers based on user interactions, like hover effects, zooming, or displaying a detailed view.
+Example in Use
+If you are using a JavaScript library, it might read the data-master attribute like this:
+
+javascript
+Copy
+Edit
+const masterImage = document.querySelector('img').getAttribute('data-master');
+console.log("Master Image URL:", masterImage);
+// Fetch the image or perform actions
+Note
+While this attribute might not directly affect how the browser renders the image, it plays a critical role in backend logic, lazy-loading scripts, or user interface enhancements.
+
+Let me know if you'd like to dive deeper into how such attributes can be leveraged in custom frameworks!
+
+
+
+
+
+
+
+You said:
+as i copied from other website resource will it work for my own system of this functionalities if that not work can you implement this
+here is my mainImage
+<img
+      src={mainImage}
+      alt={product.name}
+ChatGPT said:
+ChatGPT
+If you copied this functionality from another website, it may not work seamlessly in your system unless your system supports the same custom attributes and behavior. The data-master attribute and other custom data attributes (e.g., data-widths, data-srcset) are typically used with specific JavaScript libraries or frameworks that are designed to handle those attributes.
+
+For your own system, you would need to ensure:
+
+A JavaScript Library or Custom Code: Implement logic to utilize attributes like data-master if you want similar behavior. Alternatively, modify the attributes to work with the libraries you are using.
+Lazy Loading Library: If lazy loading or responsive image behavior is required, libraries like lazysizes or React Lazy Load Image Component can help.
+Dynamic Image URLs: Ensure that mainImage points to a valid image URL for your system.
+Adjusting mainImage Code for Your System
+Here’s how you can implement functionality similar to what you copied, tailored to your setup:
+
+React Code with Lazy Loading and Responsive Images
+jsx
+Copy
+Edit
+import React from "react";
+
+const ProductImage = ({ mainImage, alt, responsiveImages }) => {
+  return (
+    <picture>
+      {/* Fallback or high-quality image */}
+      <source 
+        srcSet={responsiveImages.large} 
+        media="(min-width: 1200px)" 
+      />
+      <source 
+        srcSet={responsiveImages.medium} 
+        media="(min-width: 768px)" 
+      />
+      <source 
+        srcSet={responsiveImages.small} 
+        media="(max-width: 767px)" 
+      />
+      {/* Main image fallback */}
+      <img 
+        src={mainImage} 
+        alt={alt} 
+        className="product-image"
+        loading="lazy" 
+      />
+    </picture>
+  );
+};
+
+export default ProductImage;
+Usage Example
+jsx
+Copy
+Edit
+<ProductImage
+  mainImage="https://yourwebsite.com/images/default.jpg"
+  alt="Product Name"
+  responsiveImages={{
+    large: "https://yourwebsite.com/images/large.jpg",
+    medium: "https://yourwebsite.com/images/medium.jpg",
+    small: "https://yourwebsite.com/images/small.jpg"
+  }}
+/>
+Key Functionalities Implemented
+Lazy Loading: By adding the loading="lazy" attribute to the <img> tag.
+Responsive Images: The <picture> element with <source> tags allows you to serve different images based on the screen size.
+Custom Attributes Removal: Removed unnecessary attributes like data-master, ensuring
+
+ compatibility with your system.
+
+
+};
+
+export default ShopCategory;
+
+//=============
+-200009540
+
+//=============================
+Description:
+User without Schoolbus access, able to search and download reports through Electronic Distribution School Bus Crashes Search Criteria
+
+
+Steps to Replicate:
+
+1. Configure the user in UMM Who has access to configured as below Role/Functions -  School bus access is NOT given.
+
+NC CRIS Crashweb  Batch- Redacted Report Viewing
+NC CRIS Crashweb  Requestor- Redacted Report Viewing
+NC CRIS Crashweb  Requestor License/Name- Redacted Report Viewing
+NC CRIS Crashweb  EDistribution- Redacted Report Viewing
+LEA Reporter
+ -----Crashweb LEA Status Search
+ -----Crashweb Create New Batch
+ -----Crashweb LEA Change Default Values
+ -----Crashweb Search by Crash ID
+ -----Crashweb Search by DL No
+ -----Crashweb View Existing Batch
+
+2. Login to Crashweb application as the above configured user. 
+3. Navigate to Electronic DistributionSearch  screen
+4. Select the below parameters
+
+Criteria: School Bus
+Subcriteria: All School Bus Related
+DMV Processed Date Range: 01/11/2024 to 01/10/2025
+County: ALL COUNTIES
+
+5. Click Search button
+6.Search results are shown with many crash reports matching the search condition
+7. Verify the details specific crash report ID -200009540 and Download the report.
+8. Downloaded report shows Redacted Version as expected.
+9. Goto Crash Search Page.
+10. Search by Crash Id and enter 200009540 and click search
+11. Error message shows as below
+
+Some of the results have been filtered out because you don't have permission to view school bus-related crashes.
+
+
+Expected Results
+As the user doesnt have school bus access, Search by Crash ID shows the error. In the same way Electronic Distribution search must show the error message.
+
+
+Actual Results:
+As the user doesnt have school bus access, Search by Crash ID shows the error but Electronic Distribution search shows access to all school bus related crashes and download the report.
+
+
+
+Refer the attached screenshot
+and few other crash Id's
+
+Username - sqacrwebsb01
+
+200009538
+200009540
+200009554
+200009555
+-------------------------------------------------------
+4	630	In Crash Report Search - User is not able to search only with the License No, it shows Crash Date range is mandatory.
+
+-------------------------------------------------------------
+Description:
+In Crash Report Search - User is not able to search only with the License No.  It shows Date range is mandatory. 
+
+
+As per requirement, Date of Crash must be a optional field.
+SR5.1.1 – Reporting and Searching by Driver/Owner License Number
+The Crashweb application will support searching for status of crash reports by driver’s license number and agency name or in combination with other attributes described in sections on SR5.1.2 – 5.1.11. It will also support searching for certified crash reports by driver’s or owner’s license number alone or in combination with an accident date range.
+
+
+
+Steps to Replicate:
+
+1. Login to Crashweb application who has access to Driver/Owner Crash Search page access.  
+2. Navigate to Crash Web Search screen
+3.. Search by NC License #/Date and the DL number as 240820014848  and remove the date of crash parameters 
+4. Click Search
+
+Expected Results
+All crash reports matching the given DL number must be shown. 
+
+
+Actual Results:
+Below error Message is shown and preventing the user to search
+
+The CrashFromDate field must be a date.
+The CrashToDate field must be a date.
+
+
+Refer the attached screenshot
+
+sqacrwebsb01
+TestPayit@1
