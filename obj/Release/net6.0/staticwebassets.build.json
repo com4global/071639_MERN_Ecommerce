@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "AVmpkLT0inZp/IJSnwYL28JUWzBPr8eIqvq8LB1ZW0g=",
+  "Source": "ApiOnLamda",
+  "BasePath": "_content/ApiOnLamda",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

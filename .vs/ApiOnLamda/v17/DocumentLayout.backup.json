@@ -1,0 +1,876 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ApiOnLamda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C#_all\\blobstoragewebapi\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\data\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:data\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\popularitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\popularitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\sqlquerylatest.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:sqlquerylatest.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\database\\firstobject.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:database\\firstobject.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Sdk.Razor.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\o5yjzd0h..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\detbtezm..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\jz5hezlr..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\baseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\baseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\services\\googleauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:services\\googleauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\googlesigninvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\googlesigninvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\controllers\\checkoutcontrollercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:controllers\\checkoutcontrollercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\checkoutrequestdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\checkoutrequestdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\kqyyysto..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\services\\igoogleauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:services\\igoogleauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\services\\googleauthconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:services\\googleauthconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\services\\idatabasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:services\\idatabasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\checkoutrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\checkoutrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Orders.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\sqlquery2.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:sqlquery2.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\sqlquery3.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:sqlquery3.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.OrderItems.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Cart.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\apionlamda.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:apionlamda.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\.nuget\\packages\\epplus\\6.0.5\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\daterangerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\daterangerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\da42vlva..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\model\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:model\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\datetimehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:datetimehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\jsondatetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:jsondatetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\swaggerfileoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:swaggerfileoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ApiOnLamda\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ApiOnLamda\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ApiOnLamda\\Data\\applicationDbContenxt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\applicationDbContenxt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ApiOnLamda\\Model\\CartItems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Model\\CartItems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\sqlquery4.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:sqlquery4.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\sqlquery5.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:sqlquery5.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\sqlquery7.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:sqlquery7.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\alter dbo.getmostrecentproducts.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:alter dbo.getmostrecentproducts.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|d:\\apionlamda\\sqlquery33.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{680BED3F-5CB6-42EB-9820-D152BB79CE48}|ApiOnLamda.csproj|solutionrelative:sqlquery33.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#_all\\blobstoragewebapi\\Program.cs",
+              "RelativeDocumentMoniker": "..\\C#_all\\blobstoragewebapi\\Program.cs",
+              "ToolTip": "D:\\C#_all\\blobstoragewebapi\\Program.cs",
+              "RelativeToolTip": "..\\C#_all\\blobstoragewebapi\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T21:17:41.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T20:44:44.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "SQLQuery33.sql",
+              "DocumentMoniker": "D:\\ApiOnLamda\\SQLQuery33.sql",
+              "RelativeDocumentMoniker": "SQLQuery33.sql",
+              "ToolTip": "D:\\ApiOnLamda\\SQLQuery33.sql",
+              "RelativeToolTip": "SQLQuery33.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-18T06:17:48.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Data\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "Data\\DatabaseHelper.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Data\\DatabaseHelper.cs",
+              "RelativeToolTip": "Data\\DatabaseHelper.cs",
+              "ViewState": "AgIAALABAAAAAAAAAAAqwMEBAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T12:37:17.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAmwIwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:22:27.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PopularItem.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\PopularItem.cs",
+              "RelativeDocumentMoniker": "Model\\PopularItem.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\PopularItem.cs",
+              "RelativeToolTip": "Model\\PopularItem.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T12:40:06.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductCategory.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\ProductCategory.cs",
+              "RelativeDocumentMoniker": "Model\\ProductCategory.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\ProductCategory.cs",
+              "RelativeToolTip": "Model\\ProductCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T12:45:58.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAAA4CAAAAAAAAAAApwBsCAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T10:38:13.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SQLQueryLATEST.sql",
+              "DocumentMoniker": "D:\\ApiOnLamda\\SQLQueryLATEST.sql",
+              "RelativeDocumentMoniker": "SQLQueryLATEST.sql",
+              "ToolTip": "D:\\ApiOnLamda\\SQLQueryLATEST.sql",
+              "RelativeToolTip": "SQLQueryLATEST.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-02T07:07:46.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "firstobject.sql",
+              "DocumentMoniker": "D:\\ApiOnLamda\\database\\firstobject.sql",
+              "RelativeDocumentMoniker": "database\\firstobject.sql",
+              "ToolTip": "D:\\ApiOnLamda\\database\\firstobject.sql",
+              "RelativeToolTip": "database\\firstobject.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-02T07:06:39.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\Product.cs",
+              "RelativeDocumentMoniker": "Model\\Product.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\Product.cs",
+              "RelativeToolTip": "Model\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T23:31:55.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Sdk.Razor.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Sdk.Razor.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Sdk.Razor.CurrentVersion.targets",
+              "ViewState": "AgIAAMYBAAAAAAAAAAAawMwBAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-01-01T23:37:49.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "o5yjzd0h..sql",
+              "DocumentMoniker": "C:\\Users\\User\\AppData\\Local\\Temp\\o5yjzd0h..sql",
+              "ToolTip": "C:\\Users\\User\\AppData\\Local\\Temp\\o5yjzd0h..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-21T13:05:44.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAhwNQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-12-29T02:25:50.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "detbtezm..sql",
+              "DocumentMoniker": "C:\\Users\\User\\AppData\\Local\\Temp\\detbtezm..sql",
+              "ToolTip": "C:\\Users\\User\\AppData\\Local\\Temp\\detbtezm..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-27T11:02:20.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ApiOnLamda\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\ApiOnLamda\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-14T14:46:08.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Alter dbo.GetMostRecentProducts.sql",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Alter dbo.GetMostRecentProducts.sql",
+              "RelativeDocumentMoniker": "Alter dbo.GetMostRecentProducts.sql",
+              "ToolTip": "D:\\ApiOnLamda\\Alter dbo.GetMostRecentProducts.sql",
+              "RelativeToolTip": "Alter dbo.GetMostRecentProducts.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-23T06:09:11.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BaseResponse.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\BaseResponse.cs",
+              "RelativeDocumentMoniker": "Model\\BaseResponse.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\BaseResponse.cs",
+              "RelativeToolTip": "Model\\BaseResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T05:09:23.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAawEMAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T00:05:22.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Model\\User.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\User.cs",
+              "RelativeToolTip": "Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:36:21.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Model\\OrderItem.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\OrderItem.cs",
+              "RelativeToolTip": "Model\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T23:02:38.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GoogleAuthService.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Services\\GoogleAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\GoogleAuthService.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Services\\GoogleAuthService.cs",
+              "RelativeToolTip": "Services\\GoogleAuthService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAIA5wDoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T23:39:36.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GoogleSignInVM.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\GoogleSignInVM.cs",
+              "RelativeDocumentMoniker": "Model\\GoogleSignInVM.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\GoogleSignInVM.cs",
+              "RelativeToolTip": "Model\\GoogleSignInVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T23:41:16.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "jz5hezlr..sql",
+              "DocumentMoniker": "C:\\Users\\User\\AppData\\Local\\Temp\\jz5hezlr..sql",
+              "ToolTip": "C:\\Users\\User\\AppData\\Local\\Temp\\jz5hezlr..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-21T05:38:07.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "checkoutrequestdata.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\checkoutrequestdata.cs",
+              "RelativeDocumentMoniker": "Model\\checkoutrequestdata.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\checkoutrequestdata.cs",
+              "RelativeToolTip": "Model\\checkoutrequestdata.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T11:55:38.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CheckoutControllerController.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Controllers\\CheckoutControllerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CheckoutControllerController.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Controllers\\CheckoutControllerController.cs",
+              "RelativeToolTip": "Controllers\\CheckoutControllerController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAawJAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:25:11.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "kqyyysto..sql",
+              "DocumentMoniker": "C:\\Users\\User\\AppData\\Local\\Temp\\kqyyysto..sql",
+              "ToolTip": "C:\\Users\\User\\AppData\\Local\\Temp\\kqyyysto..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-20T04:47:40.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IGoogleAuthService.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Services\\IGoogleAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\IGoogleAuthService.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Services\\IGoogleAuthService.cs",
+              "RelativeToolTip": "Services\\IGoogleAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T23:41:02.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwC0AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:23:51.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GoogleAuthConfig.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Services\\GoogleAuthConfig.cs",
+              "RelativeDocumentMoniker": "Services\\GoogleAuthConfig.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Services\\GoogleAuthConfig.cs",
+              "RelativeToolTip": "Services\\GoogleAuthConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T01:19:32.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IDatabaseHelper.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Services\\IDatabaseHelper.cs",
+              "RelativeDocumentMoniker": "Services\\IDatabaseHelper.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Services\\IDatabaseHelper.cs",
+              "RelativeToolTip": "Services\\IDatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T01:00:11.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CheckoutRequest.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\CheckoutRequest.cs",
+              "RelativeDocumentMoniker": "Model\\CheckoutRequest.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\CheckoutRequest.cs",
+              "RelativeToolTip": "Model\\CheckoutRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:16:08.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\Cart.cs",
+              "RelativeDocumentMoniker": "Model\\Cart.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\Cart.cs",
+              "RelativeToolTip": "Model\\Cart.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T04:23:19.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "dbo.Users.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Users.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-01T18:40:07.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "dbo.Products.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Products.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Products.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-01T18:36:21.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "dbo.Orders.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Orders.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Orders.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-01T16:25:21.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SQLQuery2.sql",
+              "DocumentMoniker": "D:\\ApiOnLamda\\SQLQuery2.sql",
+              "RelativeDocumentMoniker": "SQLQuery2.sql",
+              "ToolTip": "D:\\ApiOnLamda\\SQLQuery2.sql",
+              "RelativeToolTip": "SQLQuery2.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-01T18:41:25.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "SQLQuery4.sql",
+              "DocumentMoniker": "D:\\ApiOnLamda\\SQLQuery4.sql",
+              "RelativeDocumentMoniker": "SQLQuery4.sql",
+              "ToolTip": "D:\\ApiOnLamda\\SQLQuery4.sql",
+              "RelativeToolTip": "SQLQuery4.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-01T18:42:31.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SQLQuery3.sql",
+              "DocumentMoniker": "D:\\ApiOnLamda\\SQLQuery3.sql",
+              "RelativeDocumentMoniker": "SQLQuery3.sql",
+              "ToolTip": "D:\\ApiOnLamda\\SQLQuery3.sql",
+              "RelativeToolTip": "SQLQuery3.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-30T08:12:48.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "dbo.OrderItems.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.OrderItems.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.OrderItems.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-01T17:40:38.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "SQLQuery5.sql",
+              "DocumentMoniker": "D:\\ApiOnLamda\\SQLQuery5.sql",
+              "RelativeDocumentMoniker": "SQLQuery5.sql",
+              "ToolTip": "D:\\ApiOnLamda\\SQLQuery5.sql",
+              "RelativeToolTip": "SQLQuery5.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-01T17:16:43.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "dbo.Cart.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Cart.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/anikafashionhouse2/True/SqlTable/dbo.Cart.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-01T16:24:49.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "SQLQuery7.sql",
+              "DocumentMoniker": "D:\\ApiOnLamda\\SQLQuery7.sql",
+              "RelativeDocumentMoniker": "SQLQuery7.sql",
+              "ToolTip": "D:\\ApiOnLamda\\SQLQuery7.sql",
+              "RelativeToolTip": "SQLQuery7.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-01T16:19:53.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ApiOnLamda.csproj",
+              "DocumentMoniker": "D:\\ApiOnLamda\\ApiOnLamda.csproj",
+              "RelativeDocumentMoniker": "ApiOnLamda.csproj",
+              "ToolTip": "D:\\ApiOnLamda\\ApiOnLamda.csproj",
+              "RelativeToolTip": "ApiOnLamda.csproj",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-14T11:24:32.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "SalesReport.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\SalesReport.cs",
+              "RelativeDocumentMoniker": "Model\\SalesReport.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\SalesReport.cs",
+              "RelativeToolTip": "Model\\SalesReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T05:42:38.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "readme.txt",
+              "DocumentMoniker": "C:\\Users\\User\\.nuget\\packages\\epplus\\6.0.5\\readme.txt",
+              "ToolTip": "C:\\Users\\User\\.nuget\\packages\\epplus\\6.0.5\\readme.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-01T14:44:27.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DateRangeRequest.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\DateRangeRequest.cs",
+              "RelativeDocumentMoniker": "Model\\DateRangeRequest.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\DateRangeRequest.cs",
+              "RelativeToolTip": "Model\\DateRangeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T16:14:42.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "CartItems.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\CartItems.cs",
+              "RelativeDocumentMoniker": "Model\\CartItems.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\CartItems.cs",
+              "RelativeToolTip": "Model\\CartItems.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:35:25.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "da42vlva..sql",
+              "DocumentMoniker": "C:\\Users\\User\\AppData\\Local\\Temp\\da42vlva..sql",
+              "ToolTip": "C:\\Users\\User\\AppData\\Local\\Temp\\da42vlva..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-27T00:36:05.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Model\\LoginRequest.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\LoginRequest.cs",
+              "RelativeToolTip": "Model\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T13:53:47.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Model\\Orders.cs",
+              "RelativeDocumentMoniker": "Model\\Orders.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Model\\Orders.cs",
+              "RelativeToolTip": "Model\\Orders.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T23:01:34.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "applicationDbContenxt.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Data\\applicationDbContenxt.cs",
+              "RelativeDocumentMoniker": "Data\\applicationDbContenxt.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Data\\applicationDbContenxt.cs",
+              "RelativeToolTip": "Data\\applicationDbContenxt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T23:10:54.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DateTimeHelper.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\DateTimeHelper.cs",
+              "RelativeDocumentMoniker": "DateTimeHelper.cs",
+              "ToolTip": "D:\\ApiOnLamda\\DateTimeHelper.cs",
+              "RelativeToolTip": "DateTimeHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T12:31:34.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "JsonDateTimeConverter.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\JsonDateTimeConverter.cs",
+              "RelativeDocumentMoniker": "JsonDateTimeConverter.cs",
+              "ToolTip": "D:\\ApiOnLamda\\JsonDateTimeConverter.cs",
+              "RelativeToolTip": "JsonDateTimeConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T10:58:30.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "SwaggerFileOperationFilter.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\SwaggerFileOperationFilter.cs",
+              "RelativeDocumentMoniker": "SwaggerFileOperationFilter.cs",
+              "ToolTip": "D:\\ApiOnLamda\\SwaggerFileOperationFilter.cs",
+              "RelativeToolTip": "SwaggerFileOperationFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T16:37:31.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\ApiOnLamda\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:18:53.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\ApiOnLamda\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WeatherForecast.cs",
+              "ToolTip": "D:\\ApiOnLamda\\WeatherForecast.cs",
+              "RelativeToolTip": "WeatherForecast.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T12:07:59.69Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
